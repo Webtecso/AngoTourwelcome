@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "angotour-mobilidade",
+    "slug": "angotour-mobilidade",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "O AngoTour usa a tua localização para te mostrar no mapa durante as viagens e para o botão SOS."
+      },
+      "config": {
+        "googleMapsApiKey": "SUA_CHAVE_API_AQUI"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "SUA_CHAVE_API_AQUI"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "O AngoTour usa a tua localização para te mostrar no mapa durante as viagens e para o botão SOS."
+        }
+      ],
+      "@react-native-community/datetimepicker"
+    ]
+  }
+}
